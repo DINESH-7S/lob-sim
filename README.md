@@ -22,7 +22,7 @@ in public over six weeks. Python reference implementation first, then a C++ port
 from lobsim import Book, Side
 
 book = Book()
-book.submit_limit(1, Side.SELL, 10002, 300)   # prices are integer ticks (cents)
+book.submit_limit(1, Side.SELL, 10002, 300)  # prices are integer ticks (cents)
 book.submit_limit(2, Side.SELL, 10003, 500)
 trades = book.submit_limit(3, Side.BUY, 10003, 700)
 # -> 300 @ 10002, then 400 @ 10003
